@@ -1,4 +1,6 @@
-array = []
-for i in range(0,11,1):
-    array.append(i * i)
-print(array)  # This will print the list of squares from 0 to 81
+
+def read_file(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    print(content)
+read_file('example.txt')
